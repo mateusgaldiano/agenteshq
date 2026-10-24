@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidade · AgentesHQ</title>
+<style>
+  :root { --bg: #0f1420; --txt: #e6ebf5; --sub: #9aa6bd; --acc: #66c0f4; }
+  body { margin: 0; background: var(--bg); color: var(--txt); font: 17px/1.6 "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; color: var(--acc); }
+  p, li { color: var(--sub); }
+  a { color: var(--acc); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidade</h1>
+  <p>Última atualização: 24 de outubro de 2026.</p>
+
+  <h2>Quais dados o AgentesHQ acessa</h2>
+  <p>Com a autorização do usuário, o AgentesHQ acessa a Google Agenda dele
+     (escopo <code>https://www.googleapis.com/auth/calendar</code>) para ler, criar, editar e apagar eventos.</p>
+
+  <h2>Onde os dados ficam</h2>
+  <ul>
+    <li>O AgentesHQ roda no computador do usuário. Não existe servidor do AgentesHQ na internet.</li>
+    <li>A autorização do Google (token) fica salva só nesse computador.</li>
+    <li>Os eventos são buscados direto da API do Google quando o usuário ou um agente precisa deles.</li>
+  </ul>
+
+  <h2>Com quem os dados são compartilhados</h2>
+  <p>Os dados não são vendidos, não são usados para publicidade e não são compartilhados com terceiros,
+     com uma exceção: quando o usuário pede algo a um agente que envolve a agenda, os eventos necessários para
+     responder são enviados ao modelo de inteligência artificial que o agente usa (Claude, da Anthropic),
+     só para gerar aquela resposta.</p>
+  <p>O uso de informações recebidas das APIs do Google segue a
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>,
+     incluindo os requisitos de uso limitado.</p>
+
+  <h2>Como remover o acesso</h2>
+  <p>O acesso pode ser revogado a qualquer momento em
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+     Apagar o arquivo <code>google/token.json</code> no computador também desconecta o app.</p>
+
+  <p><a href="index.html">← Voltar</a></p>
+</main>
+</body>
+</html>
